@@ -1,3 +1,24 @@
+/*
+* TABLE OF CONTENTS
+*
+* SETTINGS
+*   GLOBAL VARIABLE AT ../_variables.css
+*     $font-family-sans-serif : Sets font type
+*     $font-family-serif: Sets font type
+*     $uoc-corporate: Font color
+*     $uoc-masterbrand: General background color
+*     $uoc-bg: ligthness
+*     $mqMinWidth: width
+* TOOLS
+*
+* GENERIC
+*
+* OBJECTS
+*
+* COMPONENTS
+*/
+
+
 * {
   box-sizing: border-box;
 }
@@ -15,7 +36,12 @@ body {
   color: $uoc-corporate;
 }
 
-.uoc-container {
+
+/*----------------*/
+/*#SECTION GENERAL*/
+/*----------------*/
+
+.container {
   max-width: 800px;
   margin: auto;
   padding: 2rem;
@@ -26,12 +52,12 @@ body {
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-.uoc-logo {
+.image-princial {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5rem;
-  max-width: 200px;
+  max-width: 100%;
   height: auto;
 
   @media (min-width: $mqMinWidth) {
@@ -39,7 +65,11 @@ body {
   }
 }
 
-.uoc-title {
+img {
+  max-width: 100%;
+}
+
+.title {
   font-family: $font-family-serif;
   font-size: 24px;
   font-weight: 700;
@@ -50,7 +80,7 @@ body {
   }
 }
 
-.uoc-footer {
+.footer {
   margin-top: 1.5rem;
   font-size: 0.75rem;
   text-align: center;
