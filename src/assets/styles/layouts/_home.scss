@@ -1,41 +1,39 @@
 /*
 * TABLE OF CONTENTS
+* =====================================================
+* This stylesheet follows CSS guidelines for a
+* standard and scalable development process.
+*
+* METODOLOGIES
+* -----------------------------------------------------
+*   - BEM (Block Element Modifier) methodology
+*   - ITCSS (Stands for Inverted Triangle CSS. It helps you organize your project CSS files )
 *
 * SETTINGS
-*   GLOBAL VARIABLE AT ../_variables.css
+* -----------------------------------------------------
+*   GLOBAL VARIABLE DECLARED AT ../_variables.css
 *     $font-family-sans-serif : Sets font type
 *     $font-family-serif: Sets font type
 *     $uoc-corporate: Font color
 *     $uoc-masterbrand: General background color
 *     $uoc-bg: ligthness
 *     $mqMinWidth: width
+*
 * TOOLS
+* -----------------------------------------------------
+*   Stylelint
 *
+*Mixins for reuse across components
 * GENERIC
-*
+* -----------------------------------------------------
+*   Box-sizing...........Better default `box-sizing`.
+*   
 * OBJECTS
+* -----------------------------------------------------
 *
 * COMPONENTS
+* -----------------------------------------------------
 */
-
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0;
-  padding: 2rem;
-  font-family: $font-family-sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
-}
-
 
 /*----------------*/
 /*#SECTION GENERAL*/
