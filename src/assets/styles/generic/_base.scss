@@ -3,7 +3,11 @@
 * {
     box-sizing: border-box;
   }
-  
+
+/*----*/
+/*BODY*/
+/*----*/
+
   body {
     display: flex;
     flex-direction: column;
@@ -16,6 +20,35 @@
     background-color: $uoc-bg;
     color: $uoc-corporate;
   }
-  
-  
-  
+
+
+
+ 
+/*------*/
+/*TITLES*/
+/*------*/
+.title{ /*Global settings for titles*/
+  font-family: $font-family-serif;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+.title-level1{ /*Global settings for titles level1*/
+  font-size: 24px;
+  color: $uoc-color-title-header-font;
+  text-align: center;
+
+  @media (min-width: $mqMinWidth) {
+    font-size: 36px;
+  }
+}
+
+.title-level2 { /*Global settings for titles level2*/
+  font-size: 20px;
+  color: $uoc-masterbrand;
+  text-align: left;
+
+  @media (min-width: $mqMinWidth) {
+    font-size: 30px;
+  }
+}

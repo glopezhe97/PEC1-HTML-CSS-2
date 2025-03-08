@@ -7,7 +7,7 @@
  * Import variables
  */
 
-@import "variables";
+@import "tools/variables";
 
 /**
  * Import npm dependencies
@@ -26,8 +26,9 @@
 
 /**
  * Import COMPONENTS 
-
 */
+@import "components/footer";
+@import "components/header.scss";
 
 /**
  * Import layouts

@@ -40,7 +40,7 @@
 /*----------------*/
 
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
   padding: 2rem;
   border-radius: 2rem;
@@ -65,21 +65,4 @@
 
 img {
   max-width: 100%;
-}
-
-.title {
-  font-family: $font-family-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: $uoc-corporate;
-
-  @media (min-width: $mqMinWidth) {
-    font-size: 36px;
-  }
-}
-
-.footer {
-  margin-top: 1.5rem;
-  font-size: 0.75rem;
-  text-align: center;
 }
