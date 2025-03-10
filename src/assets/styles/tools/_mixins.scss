@@ -1,0 +1,13 @@
+/*------*/
+/*MIXINS*/
+/*------*/
+
+/*TITLES*/
+@mixin theme-title($theme: $uoc-color-title-header-font, $align: "center", $font-size: 24px) {
+    font-family: $font-family-serif;
+    font-weight: 700;
+    margin: 0 auto 20px;
+    font-size: $font-size;
+    color: $theme;
+    text-align: $align;
+}

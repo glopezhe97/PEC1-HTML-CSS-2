@@ -10,6 +10,11 @@
 @import "tools/variables";
 
 /**
+* Import mixins
+*/
+@import "tools/mixins";
+
+/**
  * Import npm dependencies
  * see: https://v2.parceljs.org/features/module-resolution/
  * see commented examples below
@@ -27,8 +32,9 @@
 /**
  * Import COMPONENTS 
 */
+@import "components/titles";
 @import "components/footer";
-@import "components/header.scss";
+@import "components/header";
 
 /**
  * Import layouts

@@ -11,20 +11,97 @@
   <include src = "views/header.html"></include>
   <body>
     <section class="container">
+
       <h2 class="title title-level2">Els canelons de la iaia</h2>
-      <!--Switch resolution pending-->
-      <figure class="image-princial">
-        <img src="./assets/images/canelons.jpg" alt="Canelons de carn" class="img-container">
-        <figcaption> Canelons de carn</figcaption>
-      </figure>
 
       <p>Els canelons de carn són un plat tradicional que forma part de la gastronomia catalana, 
         i són especialment apreciats durant les festes de Nadal i Sant Esteve. Aquest plat es prepara a base de pasta 
         farcida amb carn de rostit, que es cobrix amb una delicada beixamel i es gratina al forn fins aconseguir una 
         textura daurada i cruixent. Tot i que és un àpat típicament festiu, la seva saborosa combinació d'ingredients 
-        fa que sigui una opció popular en qualsevol època de l'any, perfecta per a compartir en família o entre amics.</p>
+        fa que sigui una opció popular en qualsevol època de l'any, perfecta per a compartir en família o entre amics.
+      </p>
+      
+      <div class="wrapper">
+        <div class="wrapper_container">
+          <!--Switch resolution pending-->
+          <figure class="image-princial">
+            <img src="./assets/images/canelons.jpg" alt="Canelons de carn" class="img-container">
+            <figcaption> Canelons de carn</figcaption>
+          </figure>
+
+          <div class="floatcontainer">
+            <h3 class="title title-level3">Ingredients <i class="fa-regular fa-newspaper fa-fade"></i></h3>
+
+            <p>Aquesta recepta es per un total de 2 persones, on els ingredients són els següents:</p>
+            <ul class="list ingredients-list">
+              <li class="list-item">Per al farciment:
+                <ul>
+                  <li>6 làmines de canelons</li>
+                  <li>250 g de carn de vedella (o mixta, vedella i porc)</li>
+                  <li>½ ceba, picada finament</li>
+                  <li>1 dent d’all, picat</li>
+                  <li>½ pastanaga, picada finament</li>
+                  <li>50 g de tomàquet fregit o tomàquet natural triturat</li>
+                  <li>50 g de pernil salat (opcional), picat</li>
+                  <li>½ got de vi blanc (opcional)</li>
+                  <li>Sal i pebre al gust</li>
+                  <li>Oli d’oliva verge extra</li>
+                </ul>
+              </li>
+              <li class="list-item">Per a la salsa beixamel:
+                <ul >
+                    <li>25 g de mantega</li>
+                    <li>25 g de farina</li>
+                    <li>375 ml de llet</li>
+                    <li>Sal, pebre i nou moscada al gust</li>
+                </ul>
+              </li>
+              <li class="list-item">Per gratinar:
+                  <ul>
+                      <li>Formatge ratllat (al gust)</li>
+                  </ul>
+              </li>
+            </ul>
+            <button class="button button-readmore" id="button-readmore">Llegir més...</button>
+          </div>
+        </div>
+      </div>
+      
+      <article class="">
+        <p>Instruccions</p>
+          <ol class="list">
+              <li>Prepara les làmines de canelons segons les instruccions del paquet.</li>
+              <li>Per al farciment, sofregeix la ceba, l’all i la pastanaga en una paella amb oli. Afegeix-hi la carn i daura-la. Incorpora el tomàquet, el vi blanc i salpebra al gust. Cuina uns 15-20 minuts.</li>
+              <li>Per a la salsa beixamel, fon la mantega, afegeix-hi la farina i remena. Incorpora la llet a poc a poc fins que espesseixi. Condimenta amb sal, pebre i nou moscada.</li>
+              <li>Omple les làmines de canelons amb el farciment i col·loca-les en una safata per forn. Cobreix amb la salsa beixamel i formatge ratllat.</li>
+              <li>Enforna a 180 °C durant 15-20 minuts fins que el formatge estigui daurat.</li>
+              <li>Deixa reposar uns minuts abans de servir.</li>
+          </ol>
+      </article>
     </section>
+
+    <section class="container">
+      <form method="POST">
+        <h3 class="title title-level3">Subscriute per més receptes</h3>
+
+        <!--Username-->
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" required/>
+
+        <!--Email-->
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" required/>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+
+        <label for="password2">Repeat password</label>
+        <input type="password2" name="password2" id="password2" required>
+      </form>
+    </section>
+
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <script src="./assets/scripts/readMore.js"></script>
   </body>
 </html>
