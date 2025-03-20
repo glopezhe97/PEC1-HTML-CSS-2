@@ -36,52 +36,60 @@
 * -----------------------------------------------------
 */
 
-/*----------------*/
-/*#SECTION GENERAL*/
-/*----------------*/
-
-.container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 2rem;
-  border-radius: 2rem;
+.skinContainer {
+  padding: 1rem 1rem 0;
   background-color: #fff;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
 }
 
-.wrapper_container {
+.skinWrapperContainer {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  margin: 20px 0;
 }
 
-.image-princial {
-  margin-bottom: 1.5rem;
-  width: 100%;
-  height: auto;
-  flex: 1;
-  max-width: 100%;
+.skinDetailsContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  padding: 3rem 5px ;
+  border-top: 1px solid #c2bbbb;
 }
 
-.img-container {
-  max-width: 100%;
-  width: 100%;
-  object-fit: cover;
+.skinAsideContainer {
+  background-color: #d6cccc;
+  color: #34370c;
+  padding: 5px 5px 5px 10px;
+  border: 1px solid #c2bbbb;
+
 }
+
 
 .floatcontainer {
   flex: 1; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Controla tanto el espacio horizontal como vertical */
+  align-content:center; /* Evita que se expandan innecesariamente */
+  text-align: center;
+}
+
+.skinInfoContainer {
+  width: 45%;
+  border: 1px solid #c2bbbb;
+  padding: 1rem;
+  background-color: $uoc-masterbrand;
+  vertical-align: middle;
+}
+
+.skinInstructions {
+  padding: 6px 5px;
 }
 
 
 /*---------------------------------*/
-/*#SECTION 2: SHOW MORE INGREDIENTS*/
+/*#SECTION 2: LIST*/
 /*---------------------------------*/
 
-.ingredients-list {
-  max-height: 100px;
-  overflow: hidden;
-
-}
 

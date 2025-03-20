@@ -1,0 +1,12 @@
+@use "sass:color";
+
+$font-family-serif: "Roboto", sans-serif;
+
+$uoc-corporate: #1a1a00;
+$uoc-masterbrand: #d6cccc;
+$uoc-bg: color.scale($uoc-masterbrand, $lightness: 0%);
+
+$uoc-color-title-header-font: #1a1a00;
+$uoc-color-title-font: #373700;
+
+$mqMinWidth: 420px;

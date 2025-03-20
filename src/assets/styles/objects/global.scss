@@ -1,0 +1,70 @@
+/*----------------*/
+/*#SECTION GENERAL*/
+/*----------------*/
+
+/*--------------------------*/
+/*#SECTION GENERAL CONTAINR*/
+/*--------------------------*/
+
+.globalSizeContainer {
+    margin: 0 auto;
+    max-width: 1200;
+}
+
+
+
+
+/*------------------------*/
+/*#SECTION FIGURE CONTAINR*/
+/*------------------------*/
+
+.globalSizeFigure {
+  position: relative;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  height: auto;
+  flex: 1;
+  max-width: 100%;
+}
+
+/*Figcaption*/
+.globalSizeFigureCaption {
+  position: absolute;
+  bottom: 15px;
+  right: 5px;
+  color: white;
+}
+
+
+
+
+/*-----------------------*/
+/*#SECTION IMAGE CONTAINR*/
+/*-----------------------*/
+
+.globalSizeImages {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+
+/*----------------------*/
+/*#SECTION FORM CONTAINR*/
+/*----------------------*/
+
+.globalSizeFormContainer {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+
+
+/*----------------------*/
+/*#SECTION LIST CONTAINR*/
+/*----------------------*/
+.globalSizeList {
+  line-height: 2rem;
+} 

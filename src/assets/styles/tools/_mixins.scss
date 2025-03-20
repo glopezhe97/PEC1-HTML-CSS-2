@@ -3,11 +3,12 @@
 /*------*/
 
 /*TITLES*/
-@mixin theme-title($theme: $uoc-color-title-header-font, $align: "center", $font-size: 24px) {
+@mixin theme-title($theme: $uoc-color-title-header-font, $margin: 0 auto 30px, $align: "center", $font-size: 24px) {
     font-family: $font-family-serif;
     font-weight: 700;
-    margin: 0 auto 20px;
+    margin: $margin;
     font-size: $font-size;
     color: $theme;
     text-align: $align;
+
 }

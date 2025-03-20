@@ -7,7 +7,7 @@
  * Import variables
  */
 
-@import "tools/variables";
+@import "settings/variables";
 
 /**
 * Import mixins
@@ -30,11 +30,30 @@
 @import "generic/base";
 
 /**
+* IMPORT ELEMENTS
+*/
+@import "elements/titles";
+@import "elements/p";
+@import "elements/lists";
+@import "elements/links";
+
+
+/**
+* IMPORT OBJECTS
+*/
+@import "objects/global";
+
+
+/**
  * Import COMPONENTS 
 */
-@import "components/titles";
 @import "components/footer";
 @import "components/header";
+@import "components/inputs";
+@import "components/button";
+
+@import "components/form";
+
 
 /**
  * Import layouts

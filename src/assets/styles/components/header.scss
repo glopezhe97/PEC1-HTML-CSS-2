@@ -1,3 +1,6 @@
 .header {
-    margin-bottom: 50px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $uoc-color-title-header-font;
 }
