@@ -16,8 +16,7 @@
 *     $font-family-serif: Sets font type
 *     $uoc-corporate: Font color
 *     $uoc-masterbrand: General background color
-*     $uoc-bg: ligthness
-*     $mqMinWidth: width
+*     $mqMinWidthxxx: width
 *
 * TOOLS
 * -----------------------------------------------------
@@ -36,35 +35,126 @@
 * -----------------------------------------------------
 */
 
-.skinContainer {
-  padding: 1rem 1rem 0;
-  background-color: #fff;
+/*------------*/
+/*MOBILE FIRST*/
+/*------------*/
 
+/*-------------------------------*/
+/*#SECTION SKIN GENERAL CONTAINER*/
+/*-------------------------------*/
+
+.skinContainer {
+  padding: 2rem 1rem 0;
+  background-color: #fff;
 }
+
+/*----------------------------------*/
+/*#SECTION SKIN IMAGE + GENERAL INFO*/
+/*----------------------------------*/
+
+.skinWrapperContainer {
+  margin: 20px 0;
+}
+
+
+
+
+/*------------------------*/
+/*#SECTION SKIN INFO TEMPS*/
+/*------------------------*/
+.floatcontainer {
+
+  align-content:center; /* Evita que se expandan innecesariamente */
+  text-align: center;
+}
+
+
+
+/*---------------------------*/
+/*#SECTION SKIN INFO ARTICLES*/
+/*---------------------------*/
+
+.skinInfoContainer {
+  width: 100%;
+  border: 2px solid $subcolor-level3;
+  padding: 1rem;
+  background-color: $subcolor-level2;
+  vertical-align: middle;
+}
+
+
+
+
+/*-------------------------*/
+/*#SECTION SKIN INGREDIENTS*/
+/*-------------------------*/
+
+.skinAsideContainer {
+  background-color: $subcolor-level2;
+  color: #34370c;
+  padding: 5px 5px 5px 10px;
+  border: 1px solid $subcolor-level3;
+}
+
+
+
+/*-----------------------------------*/
+/*#SECTION SKIN INGREDIENTS + RECEPTA*/
+/*-----------------------------------*/
+
+.skinDetailsContainer {
+  border-top: 1px solid $subcolor-level2;
+}
+
+/*---------------------*/
+/*#SECTION SKIN RECEPTA*/
+/*---------------------*/
+
+.skinInstructions {
+  margin: 20px 0;
+  padding: 6px 0;
+}
+
+
+
+
+/*-------------*/
+/*#SECTION 1024*/
+/*-------------*/
+
+@media (min-width: $mqMinWidth1024) {
+
+/*----------------------------------*/
+/*#SECTION SKIN IMAGE + GENERAL INFO*/
+/*----------------------------------*/
 
 .skinWrapperContainer {
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  margin: 20px 0;
 }
+
+
+
+
+/*-----------------------------------*/
+/*#SECTION SKIN INGREDIENTS + RECEPTA*/
+/*-----------------------------------*/
 
 .skinDetailsContainer {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 40px;
   padding: 3rem 5px ;
-  border-top: 1px solid #c2bbbb;
+  border-top: 1px solid $subcolor-level2;
 }
 
-.skinAsideContainer {
-  background-color: #d6cccc;
-  color: #34370c;
-  padding: 5px 5px 5px 10px;
-  border: 1px solid #c2bbbb;
 
-}
 
+
+/*------------------------*/
+/*#SECTION SKIN INFO TEMPS*/
+/*------------------------*/
 
 .floatcontainer {
   flex: 1; 
@@ -75,21 +165,26 @@
   text-align: center;
 }
 
+
+
+
+/*---------------------------*/
+/*#SECTION SKIN INFO ARTICLES*/
+/*---------------------------*/
+
 .skinInfoContainer {
   width: 45%;
-  border: 1px solid #c2bbbb;
-  padding: 1rem;
-  background-color: $uoc-masterbrand;
-  vertical-align: middle;
 }
+
+
+
+
+/*---------------------*/
+/*#SECTION SKIN RECEPTA*/
+/*---------------------*/
 
 .skinInstructions {
   padding: 6px 5px;
 }
 
-
-/*---------------------------------*/
-/*#SECTION 2: LIST*/
-/*---------------------------------*/
-
-
+}

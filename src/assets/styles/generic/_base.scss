@@ -6,24 +6,43 @@
     box-sizing: border-box;
   }
 
+/*------------*/
+/*MOBILE FIRST*/
+/*------------*/
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: $font-family-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-level-1;
+  background-color: white;
+}
+/*------------*/
+/*#SECTION 480*/
+/*------------*/
+
+/*-------------*/
+/*#SECTION 1024*/
+/*-------------*/
+
+@media (min-width: $mqMinWidth1024) {
+
 /*----*/
 /*BODY*/
 /*----*/
 
   body {
-    font-family: $font-family-serif;
     font-size: 16px;
     line-height: 24px;
-    background-color: $uoc-color-title-font;
-    color: $uoc-corporate;
-    background-color: white;
   }
 
-  ul,
-  ol {
-    list-style: none;
-  }
-
-  a {
-    text-decoration: none;
-  }
+}

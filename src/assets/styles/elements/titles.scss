@@ -8,8 +8,12 @@
 /*--*/
 
 .title-level1{ /*Global settings for titles level1*/
-    @include theme-title($theme: white, $margin: 0, $align: left, $font-size: 24px);
-     @media (min-width: $mqMinWidth) {
+    @include theme-title($theme: white, $margin: 0 0 0 2rem, $align: left, $font-size: 24px);
+
+    /*MOBILE FIRST*/
+    font-size: 28px;
+
+     @media (min-width: $mqMinWidth1024) {
        font-size: 36px;
      }
    }
@@ -21,10 +25,11 @@
 /*--*/
 
 .title-level2 { /*Global settings for titles level2*/
-    @include theme-title($theme: $uoc-color-title-font,$margin: 0 auto 30px, $align: left, $font-size: 20px);
+    @include theme-title($theme: $color-level-1, $margin: 0 auto 30px, $align: left, $font-size: 20px);
 
+    font-size: 22px;
 
-    @media (min-width: $mqMinWidth) {
+    @media (min-width: $mqMinWidth1024) {
     font-size: 30px;
     }
 }
@@ -37,10 +42,11 @@
 /*--*/
 
 .title-level3 {
-  @include theme-title($theme: $uoc-color-title-font, $margin: 0 auto 10px, $align: center, $font-size: 16px);
+  @include theme-title($theme: $color-level-1, $margin: 0 auto 10px, $align: center, $font-size: 16px);
+  font-size: 18px;
 
 
-  @media (min-width: $mqMinWidth) {
+  @media (min-width: $mqMinWidth1024) {
   font-size: 24px;
   }
 }

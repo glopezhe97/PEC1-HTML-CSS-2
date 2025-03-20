@@ -7,18 +7,18 @@
 .skinSubmitButton {
     display: block;
     background-color:white ;
-    border: 1px solid #d8d800;
+    border: 2px solid $color-level-3;
     font-weight: 600;
     width: 20%;
-    color: rgba($color: #939300, $alpha: 0.9);
+    color: rgba($color-level-2, $alpha: 0.9);
     margin: 10px auto;
-    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out, border-color 0.3s ease-out;;
 
 }
 
 .skinSubmitButton:hover {
-    border: none;
-    background-color: #83833a;
+    border-color: transparent; /* Mantiene el tamaño sin el salto */
+    background-color: $color-level-2;
     color: white;
     cursor: pointer;
 }

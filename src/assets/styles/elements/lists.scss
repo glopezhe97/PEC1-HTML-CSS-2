@@ -1,4 +1,6 @@
-
+/*---------------------*/
+/*#SECTION LIST SKIN OL*/
+/*---------------------*/
 
 .skinList > li {
     position: relative;
@@ -23,6 +25,4 @@
     display: none; /* El primer elemento no debe tener un conector superior */
 }
 
-.skinListLiSecondLevel {
-    padding-left: 20px;
-}
+

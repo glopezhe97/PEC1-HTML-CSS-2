@@ -1,16 +1,39 @@
-/*FORM*/
+/*------------*/
+/*MOBILE FIRST*/
+/*------------*/
+    
+/*#SECTION FORM*/
 .skinForm {
-    width: 50%;
+    width: 95%;
     margin: 0 auto;
     text-align: left;
 }
-.globalSizeForm {
-    max-width: 100%;
-    margin-bottom: 20px;
-}
+
 
 .skinFormContainer {
-    border-top: 1px solid #c2bbbb;
+    border-top: 1px solid $subcolor-level3;
     padding: 2rem 0;
-    background-color: #e5e5e5;
+    background-color: $subcolor-level1;
+}
+
+
+/*-------------*/
+/*#SECTION 1024*/
+/*-------------*/
+
+@media (min-width: $mqMinWidth1024) {
+
+    /*#SECTION FORM*/
+    .skinForm {
+        width: 50%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+
+    .skinFormContainer {
+        border-top: 1px solid $subcolor-level3;
+        padding: 2rem 0;
+        background-color: $subcolor-level1;
+    }
 }

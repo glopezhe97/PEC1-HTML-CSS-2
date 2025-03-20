@@ -2,11 +2,17 @@
 
 $font-family-serif: "Roboto", sans-serif;
 
+$color-level-1: #1a1a00;    ;
+$color-level-2: #979762;
+$color-level-3: #d8d800;
+
+$subcolor-level1: #e5e5e5;
+$subcolor-level2: #d6cccc;
+$subcolor-level3: #c2bbbb;
+
 $uoc-corporate: #1a1a00;
-$uoc-masterbrand: #d6cccc;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 0%);
 
-$uoc-color-title-header-font: #1a1a00;
-$uoc-color-title-font: #373700;
-
-$mqMinWidth: 420px;
+/*BREAKPOINTS*/
+$mqMinWidth480: 480px;
+$mqMinWidth768: 768px;
+$mqMinWidth1024: 1024px;
