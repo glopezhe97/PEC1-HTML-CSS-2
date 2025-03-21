@@ -62,8 +62,8 @@
 /*------------------------*/
 /*#SECTION SKIN INFO TEMPS*/
 /*------------------------*/
-.floatcontainer {
 
+.floatcontainer {
   align-content:center; /* Evita que se expandan innecesariamente */
   text-align: center;
 }
@@ -118,11 +118,42 @@
 
 
 
-/*-------------*/
-/*#SECTION 1024*/
-/*-------------*/
+/*------------*/
+/*#SECTION 480*/
+/*------------*/
 
-@media (min-width: $mqMinWidth1024) {
+@media (min-width: $mqMinWidth480) {
+/*------------------------*/
+/*#SECTION SKIN INFO TEMPS*/
+/*------------------------*/
+
+  .floatcontainer {
+    align-content:center; /* Evita que se expandan innecesariamente */
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+
+
+/*---------------------------*/
+/*#SECTION SKIN INFO ARTICLES*/
+/*---------------------------*/
+
+.skinInfoContainer {
+  width: 50%;
+}
+
+}
+
+
+
+/*------------*/
+/*#SECTION 768*/
+/*------------*/
+
+@media (min-width: $mqMinWidth768) {
 
 /*----------------------------------*/
 /*#SECTION SKIN IMAGE + GENERAL INFO*/
@@ -137,16 +168,66 @@
 
 
 
-/*-----------------------------------*/
-/*#SECTION SKIN INGREDIENTS + RECEPTA*/
-/*-----------------------------------*/
+/*------------------------*/
+/*#SECTION SKIN INFO TEMPS*/
+/*------------------------*/
 
-.skinDetailsContainer {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 40px;
-  padding: 3rem 5px ;
-  border-top: 1px solid $subcolor-level2;
+.floatcontainer {
+  flex: 1; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Controla tanto el espacio horizontal como vertical */
+  align-content:center; /* Evita que se expandan innecesariamente */
+  text-align: center;
+}
+
+
+
+
+/*---------------------------*/
+/*#SECTION SKIN INFO ARTICLES*/
+/*---------------------------*/
+
+.skinInfoContainer {
+  width: 45%;
+}
+
+  
+  
+  .skinDetailsContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    padding: 3rem 5px;
+    border-top: 1px solid $subcolor-level2;
+  }
+
+
+
+/*---------------------*/
+/*#SECTION SKIN RECEPTA*/
+/*---------------------*/
+
+.skinInstructions {
+  margin: 0;
+  padding: 6px 0;
+}
+  
+}
+/*-------------*/
+/*#SECTION 1024*/
+/*-------------*/
+
+@media (min-width: $mqMinWidth1024) {
+
+/*----------------------------------*/
+/*#SECTION SKIN IMAGE + GENERAL INFO*/
+/*----------------------------------*/
+
+.skinWrapperContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 
@@ -185,6 +266,7 @@
 
 .skinInstructions {
   padding: 6px 5px;
+  margin: 0;
 }
 
 }

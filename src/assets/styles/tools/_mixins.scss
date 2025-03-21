@@ -6,6 +6,7 @@
 @mixin theme-title($theme: $color-level-1, $margin: 0 auto 30px, $align: "center", $font-size: 24px) {
     font-family: $font-family-serif;
     font-weight: 700;
+    padding: 0 5px;
     margin: $margin;
     font-size: $font-size;
     color: $theme;

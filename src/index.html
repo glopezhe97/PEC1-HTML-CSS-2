@@ -21,7 +21,11 @@
       <div class="globalSizeContainer skinWrapperContainer">
           <!--Switch resolution pending-->
           <figure class="globalSizeFigure">
-            <img src="./assets/images/canelons.jpg" alt="Canelons de carn" class="globalSizeImages">
+            <picture>
+              <source srcset="./assets/images/canelons.jpg?as=avif" type="image/avif" media="(min-width: 600px)">
+              <source srcset="./assets/images/canelons-600.jpg?as=avif" type="image/avif" media="(min-width: 480px)">
+              <img src="./assets/images/canelons-300.jpg" alt="Canelons de carn" class="globalSizeImages">
+            </picture>
             <figcaption class="globalSizeFigureCaption"> Canelons de carn</figcaption>
           </figure>
 

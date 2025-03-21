@@ -30,8 +30,8 @@
 /*Figcaption*/
 .globalSizeFigureCaption {
   position: absolute;
-  bottom: 15px;
-  right: 5px;
+  top: 10px;
+  right: 10px;
   color: white;
 }
 
@@ -47,7 +47,6 @@
   width: 100%;
   object-fit: cover;
 }
-
 
 
 
@@ -74,3 +73,11 @@
 .globalSizeList {
   line-height: 2rem;
 } 
+
+
+@media (min-width: $mqMinWidth768) {
+  .globalSizeFigure {
+    margin-bottom: 0;
+  }
+}
+

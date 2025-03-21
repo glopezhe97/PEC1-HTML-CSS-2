@@ -1,6 +1,26 @@
+
+/*------------*/
+/*MOBILE FIRST*/
+/*------------*/
 .header {
-    padding: 30px;
+    padding: 20px 16px;
     display: flex;
     justify-content: space-between;
     background-color: $color-level-1;
+}
+
+
+/*-------------*/
+/*#SECTION 1024*/
+/*-------------*/
+
+@media (min-width: $mqMinWidth1024) {
+
+    .header {
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        background-color: $color-level-1;
+    }
+
 }

@@ -8,13 +8,23 @@
 /*--*/
 
 .title-level1{ /*Global settings for titles level1*/
-    @include theme-title($theme: white, $margin: 0 0 0 2rem, $align: left, $font-size: 24px);
+    @include theme-title($theme: white, $margin: 0, $align: left, $font-size: 24px);
 
     /*MOBILE FIRST*/
-    font-size: 28px;
+
+    font-size: 2rem;
+
+    @media (min-width: $mqMinWidth480) {
+
+    font-size: 2.35rem;
+    }
+
+    @media (min-width: $mqMinWidth768) {
+      font-size: 2.45rem;
+    }
 
      @media (min-width: $mqMinWidth1024) {
-       font-size: 36px;
+       font-size: 2.50rem;
      }
    }
    
@@ -27,10 +37,21 @@
 .title-level2 { /*Global settings for titles level2*/
     @include theme-title($theme: $color-level-1, $margin: 0 auto 30px, $align: left, $font-size: 20px);
 
-    font-size: 22px;
+    font-size: 1.5rem;
+ 
+    @media (min-width: $mqMinWidth480) {
+
+      font-size: 1.75rem;
+    }
+
+    @media (min-width: $mqMinWidth768) {
+      line-height: 2rem;  
+
+      font-size: 1.90rem;
+      }
 
     @media (min-width: $mqMinWidth1024) {
-    font-size: 30px;
+    font-size: 2.25rem;
     }
 }
 
@@ -44,10 +65,24 @@
 .title-level3 {
   @include theme-title($theme: $color-level-1, $margin: 0 auto 10px, $align: center, $font-size: 16px);
   font-size: 18px;
+  display: block;
+  background: linear-gradient(0.20turn, $color-level-1 40%, $color-level-3);
+  background-clip: text;
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
 
+  @media (min-width: $mqMinWidth480) {
+
+    font-size: 1.25rem;
+    }
+
+    @media (min-width: $mqMinWidth768) {
+
+      font-size: 1.35rem;
+      }
 
   @media (min-width: $mqMinWidth1024) {
-  font-size: 24px;
+  font-size: 1.45rem;
   }
 }
 

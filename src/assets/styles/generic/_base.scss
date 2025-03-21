@@ -29,7 +29,18 @@ body {
 /*------------*/
 /*#SECTION 480*/
 /*------------*/
+@media (min-width: $mqMinWidth480) {
 
+  /*----*/
+  /*BODY*/
+  /*----*/
+  
+    body {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  
+  }
 /*-------------*/
 /*#SECTION 1024*/
 /*-------------*/
@@ -41,7 +52,7 @@ body {
 /*----*/
 
   body {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
   }
 
