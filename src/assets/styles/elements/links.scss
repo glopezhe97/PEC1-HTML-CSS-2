@@ -14,12 +14,12 @@
     top: 0;
     left: 0;
     width: 100%;
-    color: white;
+    color: $subcolor-level4;
     font-weight: 400; /* Texto más grueso para el efecto */
     clip-path: inset(0 100% 0 0); /* Ocultar el texto engrosado inicialmente */
     transition: clip-path 0.2s ease-out; /* Animación suave */
 }
 
 .skinLink:hover::after {
-    clip-path: inset(0 0 0 0); /* Revelar el texto más grueso */
+    clip-path: inset(0 0 0 0);
 }

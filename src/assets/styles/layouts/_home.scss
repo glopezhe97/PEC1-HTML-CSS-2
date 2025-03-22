@@ -6,32 +6,31 @@
 *
 * METODOLOGIES
 * -----------------------------------------------------
-*   - BEM (Block Element Modifier) methodology
+*   - OOCSS methodology (Object Oriented CSS)
 *   - ITCSS (Stands for Inverted Triangle CSS. It helps you organize your project CSS files )
 *
 * SETTINGS
 * -----------------------------------------------------
 *   GLOBAL VARIABLE DECLARED AT ../_variables.css
-*     $font-family-sans-serif : Sets font type
 *     $font-family-serif: Sets font type
-*     $uoc-corporate: Font color
-*     $uoc-masterbrand: General background color
+*     $$color-level-N: Font color diferent levels
+*     $subcolor-level1: Sub colors
 *     $mqMinWidthxxx: width
 *
 * TOOLS
 * -----------------------------------------------------
-*   Stylelint
-*   Mixin
+*   Mixin (Mixins for reuse across components)
 *
-*Mixins for reuse across components
 * GENERIC
 * -----------------------------------------------------
 *   Box-sizing...........Better default `box-sizing`.
 *   
 * OBJECTS
+* Global containers styles (objects)
 * -----------------------------------------------------
 *
 * COMPONENTS
+* UI Components as forms, inputs, etc
 * -----------------------------------------------------
 */
 

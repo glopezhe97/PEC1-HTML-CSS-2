@@ -2,16 +2,26 @@
     "extends": [
         "stylelint-config-recommended-scss"
     ],
-    "plugins": [
-        "stylelint-order"
-      ],
     "rules": {
-        "order/order": [
-            "custom-properties",
-            "dollar-variables",
-            "declarations",
-            "at-rules",
-            "rules"
-          ]
-    }
+      "selector-max-id": 0,                        
+      "selector-max-specificity": "0,3,0",     
+      "max-nesting-depth": 2,
+      "declaration-no-important": true,            
+      "no-duplicate-selectors": true,             
+      "block-no-empty": true,                      
+      "color-named": "never",                     
+      "font-family-no-missing-generic-family-keyword": true 
+    },
+    "order/properties-alphabetical-order": null, 
+    "plugin/order": [
+      [
+        "custom-properties",                     
+        "dollar-variables",                      
+        "at-rules",                             
+        "declarations",                        
+        "rules",                                
+        "media"                                 
+      ]
+    ]
    }
+  

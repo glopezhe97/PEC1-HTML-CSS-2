@@ -35,7 +35,8 @@
 /*--*/
 
 .title-level2 { /*Global settings for titles level2*/
-    @include theme-title($theme: $color-level-1, $margin: 0 auto 30px, $align: left, $font-size: 20px);
+    @include theme-title($theme: $color-level-1, $margin: 0 auto 20px, $align: left, $font-size: 20px);
+    line-height: 2rem;  
 
     font-size: 1.5rem;
  

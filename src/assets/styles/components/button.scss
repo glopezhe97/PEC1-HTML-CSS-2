@@ -6,11 +6,11 @@
 
 .skinSubmitButton {
     display: block;
-    background-color:white ;
+    background-color:$subcolor-level4 ;
     border: 2px solid $color-level-3;
     font-weight: 600;
     color: rgba($color-level-2, $alpha: 0.9);
-    margin: 10px auto;
+    margin: 30px auto 0;
     transition: background-color 0.3s ease-out, color 0.3s ease-out,border-color 0.3s ease-out;;
 
 }
@@ -18,6 +18,6 @@
 .skinSubmitButton:hover {
     border-color: transparent; /* Mantiene el tamaño sin el salto */
     background-color: $color-level-2;
-    color: white;
+    color: $subcolor-level4;
     cursor: pointer;
 }
