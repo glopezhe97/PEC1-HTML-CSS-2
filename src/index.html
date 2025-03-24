@@ -19,8 +19,7 @@
       <h2 class="title title-level2">Els canelons de la iaia</h2>
       
       <div class="globalSizeContainer skinWrapperContainer">
-          <!--Switch resolution pending-->
-          <figure class="globalSizeFigure">
+          <figure id="canelonsFigure" class="globalSizeFigure canelonsFigure">
             <picture>
               <source srcset="./assets/images/canelons-600.jpg?as=avif" type="image/avif" media="(max-width: 600px)">
               <source srcset="./assets/images/canelons.jpg?as=avif" type="image/avif" media="(min-width: 601px)">
@@ -28,6 +27,8 @@
               <img src="./assets/images/canelons.jpg" alt="Canelons de carn" class="globalSizeImages">
             </picture>
             <figcaption class="globalSizeFigureCaption"> Canelons de carn</figcaption>
+            <div class="hoverIntro">Els canelons de la iaia són més que un plat: són una mostra d'amor transmès de generació en generació, on cada tast ens transporta a la calidesa de la cuina familiar.</div>
+
           </figure>
 
           <div class="floatcontainer">
@@ -121,5 +122,6 @@
 
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <script src="./assets/scripts/showTextImage.js"></script>
   </body>
 </html>
