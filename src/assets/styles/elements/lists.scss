@@ -10,19 +10,19 @@
     margin-top: 10px; /* Espacio entre elementos */
 }
 
-.skinList > li::before {
-    content: '';
-    position: absolute;
-    top: -10px; /* Para que se vea como conector */
-    left: 50%;
-    width: 5px;
-    height: 10px; /* Igual a la separación para que se una visualmente */
-    background: #979762;
-    transform: translateX(-50%);
-}
+    .skinList > li::before {
+        content: '';
+        position: absolute;
+        top: -10px; /* Para que se vea como conector */
+        left: 50%;
+        width: 5px;
+        height: 10px; /* Igual a la separación para que se una visualmente */
+        background: #979762;
+        transform: translateX(-50%);
+    }
 
-.skinList > li:first-child::before {
-    display: none; /* El primer elemento no debe tener un conector superior */
-}
+    .skinList > li:first-child::before {
+        display: none; /* El primer elemento no debe tener un conector superior */
+    }
 
 
