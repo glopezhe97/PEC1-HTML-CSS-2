@@ -6,9 +6,8 @@
     position: relative;
     display: inline-block;
     overflow: hidden; /* Para que el efecto no se desborde */
-}
 
-    .skinLink::after {
+    &::after {
         content: attr(data-text); /* Duplicar el texto */
         position: absolute;
         top: 0;
@@ -16,10 +15,11 @@
         width: 100%;
         color: $subcolor-level4;
         font-weight: 400; /* Texto más grueso para el efecto */
-        clip-path: inset(0 100% 0 0); /* Ocultar el texto engrosado inicialmente */
+        clip-path: inset(0 100% 0 0); /* Ocultar el texto inicialmente */
         transition: clip-path 0.2s ease-out; /* Animación suave */
     }
 
-    .skinLink:hover::after {
+    &:hover::after {
         clip-path: inset(0 0 0 0);
     }
+}

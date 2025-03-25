@@ -8,11 +8,11 @@
     margin: 30px auto 0;
     transition: background-color 0.3s ease-out, color 0.3s ease-out,border-color 0.3s ease-out;
 
-}
-
-    .skinSubmitButton:hover {
+    &:hover {
         border-color: transparent; /* Mantiene el tamaño sin el salto */
         background-color: $color-level-2;
         color: $subcolor-level4;
         cursor: pointer;
     }
+}
+

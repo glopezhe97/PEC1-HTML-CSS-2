@@ -2,27 +2,28 @@
 /*#SECTION LIST SKIN OL*/
 /*---------------------*/
 
-.skinList > li {
-    position: relative;
-    background: #caca7f;
-    padding: 0.5rem 1.5rem;
-    border-radius: 1.5rem;
-    margin-top: 10px; /* Espacio entre elementos */
+.skinList {
+    > li {
+        position: relative;
+        background: #caca7f;
+        padding: 0.5rem 1.5rem;
+        border-radius: 1.5rem;
+        margin-top: 10px; /* Espacio entre elementos */
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -10px; /* Para que se vea como conector */
+            left: 50%;
+            width: 5px;
+            height: 10px; /* Igual a la separación para que se una visualmente */
+            background: #979762;
+            transform: translateX(-50%);
+        }
+
+        &:first-child::before {
+            display: none; /* El primer elemento no debe tener un conector superior */
+        }
+    }
 }
-
-    .skinList > li::before {
-        content: '';
-        position: absolute;
-        top: -10px; /* Para que se vea como conector */
-        left: 50%;
-        width: 5px;
-        height: 10px; /* Igual a la separación para que se una visualmente */
-        background: #979762;
-        transform: translateX(-50%);
-    }
-
-    .skinList > li:first-child::before {
-        display: none; /* El primer elemento no debe tener un conector superior */
-    }
-
 
